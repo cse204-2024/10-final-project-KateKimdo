@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/09-todo-react-GROUPNAME/static/css/main.413713d5.css",
+    "main.js": "/09-todo-react-GROUPNAME/static/js/main.073966b8.js",
+    "index.html": "/09-todo-react-GROUPNAME/index.html",
+    "main.413713d5.css.map": "/09-todo-react-GROUPNAME/static/css/main.413713d5.css.map",
+    "main.073966b8.js.map": "/09-todo-react-GROUPNAME/static/js/main.073966b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.413713d5.css",
+    "static/js/main.073966b8.js"
+  ]
+}
