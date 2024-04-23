@@ -1,5 +1,5 @@
 // SearchHistory.js
-import React from 'react';
+import React from "react";
 
 const SearchHistory = ({ history, onDelete }) => {
   return (
@@ -7,7 +7,7 @@ const SearchHistory = ({ history, onDelete }) => {
       {history.map((item, index) => (
         <li key={index}>
           {item}
-          <button onClick={() => onDelete(index)}>Delete</button>
+          <button onClick={() => onDelete(index)}>X</button>
         </li>
       ))}
     </ul>

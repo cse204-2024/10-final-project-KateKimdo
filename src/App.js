@@ -18,7 +18,7 @@ const App = () => {
   const fetchNutritionData = (searchQuery) => {
   setHistory(prevHistory => [...prevHistory, searchQuery]);
 
-  const API_KEY = 'U8e7960tEoT102isSVCVUW3IswcEDrcbGEYshVzO';
+  const API_KEY = 'JWcDfJ3CzYhTRd16vclKlnJhG1VhOK1LvHvwMvMw';
   const url = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${API_KEY}&query=${encodeURIComponent(searchQuery)}`;
 
   fetch(url)

@@ -1,5 +1,5 @@
 // NutritionInfo.js
-import React from 'react';
+import React from "react";
 
 const NutritionInfo = ({ info }) => {
   if (!info) return null;
@@ -11,7 +11,11 @@ const NutritionInfo = ({ info }) => {
       {/* This assumes you have an array of nutrients in the info object */}
       {info.foodNutrients.map((nutrient, index) => (
         <p key={index}>
-          {nutrient.nutrientName}: {nutrient.value} {nutrient.unitName}
+          <span className="label">{nutrient.nutrientName}</span>
+          <span className="value">
+            {nutrient.value}
+            <em> {nutrient.unitName}</em>
+          </span>
         </p>
       ))}
     </div>
