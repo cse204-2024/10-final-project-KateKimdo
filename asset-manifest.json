@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/09-todo-react-GROUPNAME/static/css/main.413713d5.css",
-    "main.js": "/09-todo-react-GROUPNAME/static/js/main.073966b8.js",
+    "main.css": "/09-todo-react-GROUPNAME/static/css/main.45b489f6.css",
+    "main.js": "/09-todo-react-GROUPNAME/static/js/main.47dd0c5a.js",
+    "static/media/Flipsnack.jpeg": "/09-todo-react-GROUPNAME/static/media/Flipsnack.fe2a68be9387cd040a24.jpeg",
     "index.html": "/09-todo-react-GROUPNAME/index.html",
-    "main.413713d5.css.map": "/09-todo-react-GROUPNAME/static/css/main.413713d5.css.map",
-    "main.073966b8.js.map": "/09-todo-react-GROUPNAME/static/js/main.073966b8.js.map"
+    "main.45b489f6.css.map": "/09-todo-react-GROUPNAME/static/css/main.45b489f6.css.map",
+    "main.47dd0c5a.js.map": "/09-todo-react-GROUPNAME/static/js/main.47dd0c5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.413713d5.css",
-    "static/js/main.073966b8.js"
+    "static/css/main.45b489f6.css",
+    "static/js/main.47dd0c5a.js"
   ]
 }
