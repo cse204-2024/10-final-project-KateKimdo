@@ -1,26 +1,25 @@
-// SearchBar.js
 import React, { useState } from 'react';
 
 const SearchBar = ({ onSearch }) => {
   const [input, setInput] = useState('');
 
   const handleSearch = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault();
     if (input.trim()) {
       onSearch(input);
-      setInput(''); // Clear the input after search
+      setInput('');
     }
   };
 
   return (
-    <form onSubmit={handleSearch}> {/* Use a form to handle enter key submission */}
+    <form onSubmit={handleSearch}> 
       <input
         type="text"
         value={input}
         onChange={e => setInput(e.target.value)}
         placeholder="Enter food name"
       />
-      <button type="submit">Search</button> {/* Button to trigger form submission */}
+      <button type="submit">Search</button> 
     </form>
   );
 };

@@ -16,7 +16,7 @@ const App = () => {
   }, []);
 
   const fetchNutritionData = (searchQuery) => {
-  setHistory(prevHistory => [...prevHistory, searchQuery]);
+    setHistory(prevHistory => [searchQuery, ...prevHistory]);
 
   const API_KEY = 'JWcDfJ3CzYhTRd16vclKlnJhG1VhOK1LvHvwMvMw';
   const url = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${API_KEY}&query=${encodeURIComponent(searchQuery)}`;
@@ -48,7 +48,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Nutrition Information System</h1>
+      <p className="api-explanation">Enter a food item to receive detailed nutrition information.</p>
       <div className="SearchBar">
         <SearchBar onSearch={fetchNutritionData} />
       </div>
@@ -56,11 +56,11 @@ const App = () => {
         <SearchHistory history={history} onDelete={handleDeleteHistoryItem} />
       </div>
       <div className="NutritionInfo">
-        <NutritionInfo info={nutritionData} />
+        {nutritionData && <NutritionInfo info={nutritionData} itemName={history[0]} />}
       </div>
       {error && <p className="ErrorMessage">{error}</p>}
     </div>
   );
-};
+}
 
 export default App;

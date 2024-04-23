@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:wght@400&display=swap');
+
+html, body {
+  height: 100%; 
+  margin: 0; 
+}
+
+#root {
+  flex: 1; 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fffbdf;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('images/Flipsnack.jpeg');
+}
+
+.quicksand-medium {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500; 
+}
+
 .App {
   text-align: center;
   font-family: "Arial", sans-serif;
@@ -6,7 +31,27 @@
 }
 
 .App h1 {
+  font-family: 'Quicksand', sans-serif;
   color: #333;
+
+}
+
+.welcome-section {
+  font-size: 1.3em;
+  font-weight: bolder;
+  color:#206f1f;
+  text-align: center;
+}
+
+.welcome-section h1{
+
+  margin-top: 150px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.welcome-section h2{
+
+  font-family: 'Quicksand', sans-serif;
 }
 
 .SearchBar {
@@ -36,13 +81,13 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  transition: all ease 0.5s;
+  transition: all ease 0.3s;
 }
 
 .SearchBar button:hover {
   border: 1px solid #1a73e8;
-  background: #fff;
-  color: #222;
+  background: #1f24b7;
+  color: #ffffff;
 }
 
 .SearchHistory {
@@ -61,7 +106,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border: 1px solid #eee;
   padding: 5px 10px;
   margin-bottom: 10px;
@@ -70,17 +115,25 @@
 }
 
 .SearchHistory button {
-  background-color: transparent;
-  padding: 5px;
+  background-color: red; 
+  color: white;
   border: none;
   cursor: pointer;
-  margin-left: auto;
-  margin-left: 7px;
+  margin-left: 5px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  transition: all ease 0.3s;
 }
 
 .SearchHistory button:hover {
   background-color: darkred;
 }
+
+.foodItemName {
+  font-family: 'Quicksand', sans-serif;
+  color:#206f1f;
+}
+
 
 .NutritionInfo {
   background-color: #fff;
@@ -102,7 +155,7 @@
 .NutritionInfo p {
   color: #666;
   line-height: 1.5;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #ffffff;
   padding-bottom: 5px;
 }
 .NutritionInfo .label {
@@ -130,9 +183,11 @@
 }
 footer {
   margin: 60px auto 0;
-  padding: 20px 40px 10px;
-  background: #f6f6f6;
+  padding: 40px 40px 40px;
+  background: #206f1f;
   font-size: 14px;
-  color: #666;
-  text-align: right;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  
 }

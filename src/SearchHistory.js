@@ -1,4 +1,3 @@
-// SearchHistory.js
 import React from "react";
 
 const SearchHistory = ({ history, onDelete }) => {
