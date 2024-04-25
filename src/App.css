@@ -5,17 +5,24 @@ html, body {
   margin: 0; 
 }
 
+html {
+  background-color: #67c672;
+  background-image: url('images/vegetables.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-size: 150%;
+}
+
 #root {
   flex: 1; 
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #fffbdf;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url('images/Flipsnack.jpeg');
 }
 
 .quicksand-medium {
@@ -52,6 +59,14 @@ body {
 .welcome-section h2{
 
   font-family: 'Quicksand', sans-serif;
+}
+
+.main-content {
+  background-color: rgba(136, 199, 140, 0.726);
+  padding: 20px;
+  border-radius: 8px;
+  width: 1000px;
+  margin: 20px auto;
 }
 
 .SearchBar {
@@ -91,7 +106,10 @@ body {
 }
 
 .SearchHistory {
-  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .SearchHistory ul {
@@ -184,8 +202,8 @@ body {
 footer {
   margin: 60px auto 0;
   padding: 40px 40px 40px;
-  background: #206f1f;
-  font-size: 14px;
+  background: #6ab455;
+  font-size: 16px;
   color: #ffffff;
   text-align: center;
   width: 100%;
