@@ -1,4 +1,3 @@
-// NutritionInfo.js
 import React from "react";
 
 const NutritionInfo = ({ info, itemName }) => {

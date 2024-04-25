@@ -60,7 +60,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="main-content">
-      <p className="api-explanation">Enter a food item or click on the random food button to explore nutrition information.</p>
+      <p className="api-explanation">Enter a food item or click on the random food button to explore nutrition information.</p><p>ex. apple, potato</p>
         <div className="search-wrapper">
           <div className="search-and-button">
                 <SearchBar onSearch={fetchNutritionData} />

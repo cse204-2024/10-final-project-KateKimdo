@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:wght@400&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 html, body {
   height: 100%; 
@@ -8,8 +11,15 @@ html, body {
 html {
   background-color: #ffffff;
   background-image: url('images/Flipsnack.jpeg');
-  background-position: center; 
-  background-size: 130%;
+  background-size: auto;
+  background-repeat: repeat;
+
+}
+
+header {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 #root {
@@ -49,6 +59,7 @@ body {
   color:#0d510c;
   text-align: center;
   margin-top: 190px;
+  align-items: center;
 }
 
 .welcome-section h1{
@@ -196,6 +207,7 @@ body {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+  font-size: 17px;
 }
 
 .foodItemName {
@@ -295,6 +307,12 @@ footer {
   .welcome-section {
     font-size: 1.0em;
   }
+
+  .api-explanation {
+    font-size: 15px;
+    width: 100%;
+  }
+  
 }
 
 @media (max-width: 480px) {
