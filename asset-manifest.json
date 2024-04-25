@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/10-final-project-KateKimdo/static/css/main.f71bae37.css",
-    "main.js": "/10-final-project-KateKimdo/static/js/main.e51aac30.js",
-    "static/media/vegetables.jpg": "/10-final-project-KateKimdo/static/media/vegetables.d93b683a6f4666a5fe27.jpg",
+    "main.css": "/10-final-project-KateKimdo/static/css/main.5e48c79c.css",
+    "main.js": "/10-final-project-KateKimdo/static/js/main.c7e3957b.js",
+    "static/media/Flipsnack.jpeg": "/10-final-project-KateKimdo/static/media/Flipsnack.fe2a68be9387cd040a24.jpeg",
     "index.html": "/10-final-project-KateKimdo/index.html",
-    "main.f71bae37.css.map": "/10-final-project-KateKimdo/static/css/main.f71bae37.css.map",
-    "main.e51aac30.js.map": "/10-final-project-KateKimdo/static/js/main.e51aac30.js.map"
+    "main.5e48c79c.css.map": "/10-final-project-KateKimdo/static/css/main.5e48c79c.css.map",
+    "main.c7e3957b.js.map": "/10-final-project-KateKimdo/static/js/main.c7e3957b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f71bae37.css",
-    "static/js/main.e51aac30.js"
+    "static/css/main.5e48c79c.css",
+    "static/js/main.c7e3957b.js"
   ]
 }
