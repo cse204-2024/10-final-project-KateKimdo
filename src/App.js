@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import SearchHistory from './SearchHistory';
 import NutritionInfo from './NutritionInfo';
@@ -11,11 +11,6 @@ const App = () => {
   const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(false);
   const sampleFoods = ["Apple", "Banana", "Carrot", "Date", "Eggplant", "Fig", "Grape", "Honeydew"];
-
-  useEffect(() => {
-    const savedHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
-    setHistory(savedHistory);
-  }, []);
 
   const fetchNutritionData = (searchQuery) => {
     setLoading(true);

@@ -6,11 +6,10 @@ html, body {
 }
 
 html {
-  background-color: #67c672;
-  background-image: url('images/vegetables.jpg');
-  background-size: cover;
+  background-color: #ffffff;
+  background-image: url('images/Flipsnack.jpeg');
   background-position: center; 
-  background-size: 150%;
+  background-size: 130%;
 }
 
 #root {
@@ -35,6 +34,7 @@ body {
   font-family: "Arial", sans-serif;
   width: 80%;
   margin: auto;
+  margin-top: 60px;
 }
 
 .App h1 {
@@ -46,8 +46,9 @@ body {
 .welcome-section {
   font-size: 1.3em;
   font-weight: bolder;
-  color:#206f1f;
+  color:#0d510c;
   text-align: center;
+  margin-top: 190px;
 }
 
 .welcome-section h1{
@@ -62,10 +63,11 @@ body {
 }
 
 .main-content {
-  background-color: rgba(136, 199, 140, 0.726);
-  padding: 20px;
+  background-color: rgba(95, 193, 102, 0.796);
+  width: 100%;
+  padding: 40px;
   border-radius: 8px;
-  margin: 20px auto;
+  margin-bottom: 40px;
 }
 
 /* search bar */
@@ -74,6 +76,7 @@ body {
   align-items: center;
   margin: 20px auto 0;
   width: 100%;
+  
 }
 
 .SearchBar {
@@ -82,7 +85,7 @@ body {
 }
 
 .SearchBar input {
-  padding: 15px 10px;
+  padding: 13px 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
@@ -131,8 +134,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   margin: 0 auto;
+  width: 50%;
 }
 
 .SearchHistory {
@@ -148,10 +151,17 @@ body {
 .SearchHistory ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
-  width: 50%;
+  margin: 0;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: auto;
+  gap: 10px;
+  width: 100%;
 }
+
+
 
 .SearchHistory li {
   display: flex;
@@ -261,10 +271,8 @@ footer {
     width: 100%;
   }
   .main-content{
-    padding: 3px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     border-radius: 8px;
+    padding: 25px;
   }
 
   .random-food-button{
@@ -283,6 +291,10 @@ footer {
   .NutritionInfo h3 {
     font-size: 18px;
   }
+
+  .welcome-section {
+    font-size: 1.0em;
+  }
 }
 
 @media (max-width: 480px) {
@@ -292,21 +304,13 @@ footer {
     width: 95%;
   }
   .main-content{
-    padding: 3px;
-    padding-top: 20px;
+    padding: 20px;
     border-radius: 8px;
-    padding-bottom: 20px;
     }
   }
 
-.search-and-button{
-  padding: 8px;
-  font-size: 8px;
-}
-  .search-wrapper {
-    width: 50%;
-  }
+  
 
-  .NutritionInfo h3 {
-    font-size: 18px;
-  }
+
+
+ 
