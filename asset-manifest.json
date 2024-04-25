@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/09-todo-react-GROUPNAME/static/css/main.75fc4f10.css",
-    "main.js": "/09-todo-react-GROUPNAME/static/js/main.e51aac30.js",
-    "static/media/vegetables.jpg": "/09-todo-react-GROUPNAME/static/media/vegetables.d93b683a6f4666a5fe27.jpg",
-    "index.html": "/09-todo-react-GROUPNAME/index.html",
-    "main.75fc4f10.css.map": "/09-todo-react-GROUPNAME/static/css/main.75fc4f10.css.map",
-    "main.e51aac30.js.map": "/09-todo-react-GROUPNAME/static/js/main.e51aac30.js.map"
+    "main.css": "/10-final-project-KateKimdo/static/css/main.f71bae37.css",
+    "main.js": "/10-final-project-KateKimdo/static/js/main.e51aac30.js",
+    "static/media/vegetables.jpg": "/10-final-project-KateKimdo/static/media/vegetables.d93b683a6f4666a5fe27.jpg",
+    "index.html": "/10-final-project-KateKimdo/index.html",
+    "main.f71bae37.css.map": "/10-final-project-KateKimdo/static/css/main.f71bae37.css.map",
+    "main.e51aac30.js.map": "/10-final-project-KateKimdo/static/js/main.e51aac30.js.map"
   },
   "entrypoints": [
-    "static/css/main.75fc4f10.css",
+    "static/css/main.f71bae37.css",
     "static/js/main.e51aac30.js"
   ]
 }
