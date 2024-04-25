@@ -8,7 +8,6 @@ const App = () => {
   const [nutritionData, setNutritionData] = useState(null);
   const [error, setError] = useState('');
   const [history, setHistory] = useState([]);
-
   useEffect(() => {
     const savedHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
     setHistory(savedHistory);
@@ -19,15 +18,15 @@ const App = () => {
   }, [history]);
 
   const fetchNutritionData = (searchQuery) => {
-    setHistory(prevHistory => [searchQuery, ...prevHistory]);
-    const API_KEY = 'JWcDfJ3CzYhTRd16vclKlnJhG1VhOK1LvHvwMvMw';
-    const url = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${API_KEY}&query=${encodeURIComponent(searchQuery)}`;
+  setHistory(prevHistory => [searchQuery, ...prevHistory]);
+  const API_KEY = 'JWcDfJ3CzYhTRd16vclKlnJhG1VhOK1LvHvwMvMw';
+   const url = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${API_KEY}&query=${encodeURIComponent(searchQuery)}`;
 
     fetch(url)
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
-        }
+     }
         return response.json();
       })
       .then(data => {
@@ -39,12 +38,11 @@ const App = () => {
         }
       })
       .catch(error => {
-        console.error("Error fetching nutrition data:", error);
-        setError(error.message);
-        setNutritionData(null);
-      });
+            console.error("Error fetching nutrition data:", error);
+              setError(error.message);
+            setNutritionData(null);
+          });
   };
-
   const handleDeleteHistoryItem = (index) => {
     const newHistory = [...history];
     newHistory.splice(index, 1);
